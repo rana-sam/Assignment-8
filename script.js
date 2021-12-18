@@ -59,6 +59,7 @@ function dates(d1,d2) {
 dates('11/14/2013 00:00','11/14/2013 00:00')
 dates('11/14/2013 00:01','11/14/2013 00:00')
 
+
 // program 6
 function addMinute(mint) {
     var d=new Date(mint)
@@ -66,3 +67,22 @@ function addMinute(mint) {
     console.log(d);
 }
 addMinute(50)
+
+
+// program 7
+
+function isWeekend(dat) {
+    var d=new Date(dat)
+    var week=d.getDay()
+    if (week==0|| week==6) {
+        
+        console.log("Weekend");
+    }
+    else{
+        console.log("undefinrd");
+    }
+    
+}
+isWeekend('Nov 15, 2014')
+isWeekend('Nov 16, 2014')
+isWeekend('Nov 17, 2014')
