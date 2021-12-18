@@ -19,11 +19,6 @@ function currentDate(x) {
 
 function Days(x,y) {
 
-    // var d=new Date(x,y)
-    // var year=d.getFullYear()
-    // var month=d.getMonth()
-    // var day=m.getDay()
-    // console.log(day);
     return new Date(x, y, 0).getDate();
     
 }
@@ -31,3 +26,15 @@ function Days(x,y) {
  console.log(x);
  
 //  program 4
+
+function monthName(x) 
+{
+    
+    var d=new Date(x)
+    var month=d.getMonth()
+   var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    console.log(months[month]);
+    
+}
+
+monthName('1/10/2009')
