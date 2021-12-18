@@ -15,3 +15,19 @@ function currentDate(x) {
  currentDate("/");
 
 
+//  program 3
+
+function Days(x,y) {
+
+    // var d=new Date(x,y)
+    // var year=d.getFullYear()
+    // var month=d.getMonth()
+    // var day=m.getDay()
+    // console.log(day);
+    return new Date(x, y, 0).getDate();
+    
+}
+ var x=Days(2021,2)
+ console.log(x);
+ 
+//  program 4
