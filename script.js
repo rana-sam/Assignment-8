@@ -58,3 +58,11 @@ function dates(d1,d2) {
 }
 dates('11/14/2013 00:00','11/14/2013 00:00')
 dates('11/14/2013 00:01','11/14/2013 00:00')
+
+// program 6
+function addMinute(mint) {
+    var d=new Date(mint)
+    d.setMinutes(mint)
+    console.log(d);
+}
+addMinute(50)
